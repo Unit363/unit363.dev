@@ -1,3 +1,3 @@
-public/          # Hugo build output — generated, not stored in repo
-resources/       # Hugo resource cache
+public/
+resources/
 .hugo_build.lock
