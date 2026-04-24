@@ -1,0 +1,99 @@
+# ─── SITE BASICS ────────────────────────────────────────────────
+baseURL = 'https://unit363.dev/'   # Your live domain
+languageCode = 'en'
+theme = "hello-4s3ti"
+title = 'unit363'
+copyright = "unit363"
+
+# ─── GENERAL PARAMS ─────────────────────────────────────────────
+[params]
+  defaultTheme = "dark"          # Always start dark
+  EnableThemeToggle = true       # Let visitors switch light/dark
+  EnableSharingButtons = false   # No share buttons, keeps it clean
+  backgroundEffects = false      # Disable animated background
+  showPosts = true               # Show posts on homepage
+  paginate = 5                   # Posts per page
+  tags = true                    # Enable tags on posts
+  ReadMoreText = true            # Show "Read more" on post previews
+  ShowReadingTime = true         # "5 min read" on posts
+  LastModDisplay = true          # Show last modified date
+  fontAwesome = { KitURL = "https://kit.fontawesome.com/ee7cbbfc9e.js" }
+  
+  # Logo in top-left — logoText is what's displayed
+  logo = { logoText = "unit363", logoCursorColor = "#00ffff" }
+  
+  # Footer config
+  # bottomText = small links at the very bottom
+  footer = { showVersion = false, socialIcons = true, author = true, rss = false, trademark = false, copyright = true, bottomText = ["Powered by <a href=\"http://gohugo.io\">Hugo</a>"] }
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+# ─── AUTHOR ─────────────────────────────────────────────────────
+[params.author]
+  name = "unit363"
+
+# ─── SOCIAL LINKS (footer icons) ────────────────────────────────
+[[params.social]]
+  name = "github"
+  url = "https://github.com/unit363"
+
+[[params.social]]
+  name = "reddit"
+  url = "https://reddit.com/u/unit363"    # update with your username
+
+[[params.social]]
+  name = "envelope"                        # mail icon
+  url = "mailto:developer@unit363.dev"
+  icon = "fa-solid fa-envelope"
+
+[[params.social]]
+  name = "TryHackMe"
+  url = "https://tryhackme.com/p/unit363"
+  icon = "fa-solid fa-flag"               # no native THM icon, flag fits
+
+[[params.social]]
+  name = "HackTheBox"
+  url = "https://app.hackthebox.com/profile/unit363"
+  icon = "fa-solid fa-cube"               # no native HTB icon, cube fits
+
+# ─── TAXONOMIES ─────────────────────────────────────────────────
+# Defines how posts are categorized/tagged
+# /tags/linux → lists all posts with tag "linux"
+[taxonomies]
+  tag = "tags"
+  category = "blog"
+
+# ─── NAVIGATION MENU ────────────────────────────────────────────
+# weight = order in the nav bar (lower = further left)
+
+[[menu.main]]
+  identifier = "posts"
+  name = "Blog"
+  url = "/posts"
+  weight = 1
+
+[[menu.main]]
+  identifier = "ctf"
+  name = "CTF"
+  url = "/ctf"
+  weight = 2
+
+# Tools = dropdown menu, no URL on parent
+[[menu.main]]
+  identifier = "tools"
+  name = "Tools"
+  weight = 3
+
+[[menu.main]]
+  identifier = "switch-configurator"
+  name = "Switch Configurator (NAC)"
+  url = "/tools/switch-configurator"
+  parent = "tools"               # makes this a dropdown item under Tools
+  weight = 1
+
+[[menu.main]]
+  identifier = "about"
+  name = "About"
+  url = "/about"
+  weight = 4
