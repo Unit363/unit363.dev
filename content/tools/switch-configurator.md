@@ -6,7 +6,7 @@ tags: ["python", "cisco", "networking", "automation", "ise"]
 
 ## Overview
 
-Switch Configurator is a Python automation tool designed to push configurations across large-scale Cisco switch environments using Netmiko and `ciscoisesdk`. Originally build to enroll ISE, RADIUS, AAA configs.
+Switch Configurator is a Python automation tool designed to push configurations across large-scale Cisco switch environments using Netmiko and `ciscoisesdk`. Originally build to enroll ISE, RADIUS, AAA and NAC configs.
 
 ## Features
 
