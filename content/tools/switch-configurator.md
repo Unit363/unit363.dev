@@ -16,8 +16,3 @@ Switch Configurator is a Python automation tool designed to push configurations 
 - Per-port verification and CSV reporting (device-level)
 - `configparser`-based config files for flexible deployment
 - Display and Confirmation Process on each step
-
-## Bugs
-
-- Identation only for one Level. (So if more than one identation Levels in Config, the verification and idempotence break)
-- No Context awear checks
