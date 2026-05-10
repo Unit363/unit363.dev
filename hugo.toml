@@ -82,8 +82,9 @@ copyright = "unit363"
 # Tools = dropdown menu, no URL on parent
 [[menu.main]]
   identifier = "tools"
-  name = "Tools"
-  weight = 3
+  name       = "Tools"
+  url        = "/tools/"
+  weight     = 3
 
 [[menu.main]]
   identifier = "switch-configurator"

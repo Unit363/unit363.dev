@@ -1,7 +1,13 @@
 ---
-title: "Switch Configurator (NAC)"
-description: "Python-based network automation tool for pushing ISE/RADIUS/AAA configurations across large Cisco switch environments"
-tags: ["python", "cisco", "networking", "automation", "ise"]
+title: Switch Configurator (NAC)
+description: Python-based network automation tool for pushing ISE/RADIUS/AAA configurations across large Cisco switch environments
+tags:
+  - python
+  - cisco
+  - networking
+  - automation
+  - ise
+date:
 ---
 
 ## Overview
