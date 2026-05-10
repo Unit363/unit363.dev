@@ -7,7 +7,7 @@ tags:
   - networking
   - automation
   - ise
-date:
+date: 2026-04-18
 ---
 
 ## Overview
@@ -22,3 +22,4 @@ Switch Configurator is a Python automation tool designed to push configurations 
 - Per-port verification and CSV reporting (device-level)
 - `configparser`-based config files for flexible deployment
 - Display and Confirmation Process on each step
+
